@@ -1,0 +1,341 @@
+body {
+  margin: 0;
+  overflow-y: scroll;
+}
+
+
+/* Style the header */
+.header {
+  background-color:  #131313; /* light black header */
+  padding: 20px;
+  color:#880808; 				/*font color*/
+  text-align:left;			
+  font-family: 'Monoton', sans-serif;
+  text-padding: 2px;
+}
+
+/* Background body change colour */
+body {
+  background-color: #131313;
+}
+
+
+/* Zoomed font for side menu */
+.zoomed-text {
+      transition: font-size 0.5s; /* Smooth transition for font size change */
+    }
+
+.zoomed-text:hover {
+      font-size: 24px; /* Adjust the zoomed-in font size as needed */
+    }
+	
+	
+/* Sidebar navigation menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #131313;
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+  font-family: 'Monoton', sans-serif;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 22px 24px;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+}
+
+li a:hover:not(.active) {
+  background-color: #880808;
+  color: white;
+}
+
+/* selected link */
+li a.active {
+  background-color: #880808;
+  color: white; 
+    }
+}
+
+
+/* Footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #131313 ;
+  color: white;
+}
+
+/* Style the footer */
+footer {
+  background-color: #131313;
+  padding: 2px;
+  text-align: center;
+  color: white;
+  margin-left: 30%;
+}
+
+
+/* Logo Image */
+.logo img {
+    position: relative;
+    width: 90px;
+	height: 90px; /* Adjusted height */
+    float:left;
+    margin-top:-4px;
+    cursor: pointer;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Slideshow container for movie(Homepage)*/
+    .slideshow-container { 
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    }
+    
+/* Caption text */
+    .text {
+    color: #f2f2f2; 
+    font-size: 15px;
+    padding: 8px 12px; 
+    position: absolute; 
+    bottom: 8px; 
+    width: 100%; 
+    text-align: center;
+    }
+    
+/* Number text (1/3 etc) */ 
+    .numbertext {
+    color: #f2f2f2; 
+    font-size: 12px;
+    padding: 8px 12px; 
+    position: absolute; 
+    top: 0;
+    }
+    
+/* The dots/bullets/indicators for slideshow*/
+    .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+    
+    .active {
+    background-color: #717171;
+    }
+    
+    /Fading animation/
+    .fade{
+    -webkit-animation-name:fade;
+    -webkit-animation-duration:1.5s;
+    animation-name:fade;
+    animation-duration:1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+    
+    @keyframes fade { 
+    from {opacity: .4} 
+    to {opacity: 1}
+    }
+    
+/* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) { 
+    .text {font-size: 11px}
+    }
+
+	
+/* Picture gallery(Homepage Premiering Soon) */	
+	div.gallery img {
+	width: 100%;
+	height: auto;
+	}
+
+	
+	div.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 210px;
+	}
+
+	div.gallery:hover {
+	border: 1px solid #777;
+	}
+
+
+	div.desc {
+	padding: 15px;
+	text-align: center;
+	color: white;
+	}
+	
+/* Container for Premiering Soon styles*/
+    .gallery {
+      position: relative;
+      overflow: hidden;
+      width: 600px; /* Set the width of the container */
+      height: 400px; /* Set the height of the container */
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      transition: transform 0.3s; /* Add a smooth transition for the zoom effect */
+    }
+	
+/* Image styles for Zoom Effect Image(Homepage)*/
+    .zoom-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Maintain aspect ratio */
+    }
+
+/* Hover effect */
+    .gallery:hover {
+      transform: scale(1.2); /* Adjust the scale value for the zoom effect */
+    }
+
+/* Description styles */
+    .desc {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+
+/* Container styles for Trailers */
+    .box-container {
+      display: flex;
+      flex-direction: column; /* Arrange items vertically */
+	  margin-left:10%;
+	  
+    }
+	
+/* Box styles for Trailers */
+    .box {
+      width: 200px;
+      height: 300px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      margin: 30px; /* Add margin between boxes */
+    }
+
+
+/* Button styles for Trailers*/
+    .see-trailers-button {
+      margin-top: 10px; /* Add margin between boxes and button */
+      padding: 3px;
+      background-color: #880808;
+      color: white;
+      border: 2px solid #880808;
+      cursor: pointer;
+	  text-align: center;
+	  font-size: 110%;
+	  border-radius: 25px; /* Adjust the border-radius for the curve */
+	  display: block; /* Make it a block-level element */
+	  margin-left: auto; /* Center horizontally */
+	  margin-right: auto; /* Center horizontally */
+    }
+	
+/* Add zoom-in effect on hover */
+.see-trailers-button:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+	
+
+/* Main container for Paragraph(Trailers)*/
+.main-container {
+  display: flex;
+  margin-left: 30%;
+}
+	
+.container {
+      display: flex;
+      flex-direction: column; /* Arrange items vertically */
+}
+
+.paragraph-container {
+  margin-left: 60px; /* Adjust the margin as needed */
+  padding-top: 17px;
+  font-size : 70%;
+}
+
+
+
+/*Collapsible for Community*/
+.collapsible {
+  background-color: #131313;
+  color: white;
+  cursor: pointer;
+  padding: 45px;
+  width: 58%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 120%;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Adjust the border-radius for the curve */
+  font-family: 'Tinos', serif;
+ 
+}
+
+.active, .collapsible:hover {
+  background-color: #880808;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  width: 54.2%;
+  font-size: 100%;
+  text-align: justify;
+  border-radius: 25px; /* Adjust the border-radius for the curve */
+}

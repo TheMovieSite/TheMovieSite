@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheMovie Site</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="images/logo_moviesite.jpg" alt="company logo">
+    </div>
+    <h1>&nbsp; TheMovie Site </h1>
+  </div>
+
+  <div class="container">
+    <div class="column_side">
+      <ul>
+        <li><a id="zoomText" class="zoomed-text" href="Homepage.html">Home</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Genre.html">Genre</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Movie.html">Movie</a></li>
+  <li><a class="active" href="Watch.html">Watch</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Profile.html">Celebs</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Trailers.html">Trailers</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Community.html">Community</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Commentary.html">Commentary</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <section>
+        <h1 style="color:white;">Top 10 This Week: </h1>
+        <br>
+        <div class="watch-poster">
+          <img class="zoom-image" src="images/mov1.jpg" alt="">
+          <div class="watch-name">THE MEDIUM</div>
+        </div>
+        <div class="watch-poster">
+          <img class="zoom-image" src="images/mov3.jpg" alt="">
+          <div class="watch-name">THE TRUMAN SHOW</div>
+        </div>
+    <div class="watch-poster">
+          <img class="zoom-image" src="images/mov2.jpg" alt="">
+          <div class="watch-name">AVENGERS: ENDGAME</div>
+        </div>
+    <div class="watch-poster">
+          <img class="zoom-image" src="images/mov4.jpg" alt="">
+          <div class="watch-name">SPIDERMAN: ACROSS THE SPIDER-VERSE</div>
+        </div>
+    <div class="watch-poster">
+          <img class="zoom-image" src="images/mov5.jpg" alt="">
+          <div class="watch-name">SILENT HILL</div>
+        </div>
+    <div class="watch-poster">
+          <img class="zoom-image" src="images/mov6.jpg" alt="">
+          <div class="watch-name">KUNGFU HUSTLE</div>
+        </div>
+    <div class="watch-poster">
+          <img class="zoom-image" src="images/mov7.jpg" alt="">
+          <div class="watch-name">THE HUMAN CENTIPEDE</div>
+        </div>
+    <div class="watch-poster">
+          <img class="zoom-image" src="images/mov8.jpg" alt="">
+          <div class="watch-name">FEAR STREET</div>
+        </div>
+        <div class="watch-poster">
+          <img class="zoom-image" src="images/mov9.jpg" alt="">
+          <div class="watch-name">THE EXORCISM OF EMILY ROSE</div>
+        </div>
+        <div class="watch-poster">
+          <img class="zoom-image" src="images/mov10.jpg" alt="">
+          <div class="watch-name">YOUR NAME</div>
+        </div>
+        <div class="watch-poster">
+          <img class="zoom-image" src="images/mov16.jpg" alt="">
+          <div class="watch-name">WOLF CHILDREN</div>
+        </div>
+        <div class="watch-poster">
+          <img class="zoom-image" src="images/mov17.jpg" alt="">
+          <div class="watch-name">INCANTATION</div>
+        </div>
+      </section>
+
+      <br>
+      
+      <section class="Trend">
+        <h1 style="color:white;">Currently Trending: </h1>
+        <br>
+        <div class="watch-poster">
+          <img class="zoom-image" src="images/mov11.jpg" alt="">
+          <div class="watch-name">Spiderman: No Way Home</div>
+        </div>
+        <div class="watch-poster">
+          <img class="zoom-image" src="images/mov12.jpg" alt="">
+          <div class="watch-name">AVENGERS INFINITY WAR</div>
+        </div>
+    <div class="watch-poster">
+          <img class="zoom-image" src="images/mov14.jpg" alt="">
+          <div class="watch-name">THE SIXTH SENSE</div>
+        </div>
+    <div class="watch-poster">
+          <img class="zoom-image" src="images/mov15.jpg" alt="">
+          <div class="watch-name">THE MATRIX</div>
+        </div>
+    <div class="watch-poster">
+          <img class="zoom-image" src="images/mov13.jpg" alt="">
+          <div class="watch-name">BALLERINA</div>
+        </div>
+        <div class="watch-poster">
+          <img class="zoom-image" src="images/mov18.jpg" alt="">
+          <div class="watch-name">JOHNNY ENGLISH</div>
+        </div>
+        <div class="watch-poster">
+          <img class="zoom-image" src="images/mov19.jpg" alt="">
+          <div class="watch-name">CLOVERFIELD</div>
+        </div>
+        <div class="watch-poster">
+          <img class="zoom-image" src="images/mov20.jpg" alt="">
+          <div class="watch-name">2012</div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="footer">
+    <footer>
+      <p>&copy; TheMovie Site, 2023</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('zoomText').addEventListener('click', function() {
+      this.classList.toggle('zoomed');
+    });
+  </script>
+
+</body>
+</html>

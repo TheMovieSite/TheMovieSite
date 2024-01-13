@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TheMovie Site</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="homepage,trailers,community.css"
+
+<!=======Import Fonts===================>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="header">
+		<div class="logo">
+		<img src="moviesite_logo.png" alt="company logo"></div>
+        <h1>&nbsp; TheMovie Site </h1>
+	
+</div>
+
+<div class=".column side">
+<ul>
+  <li><a class="active" href="Homepage.html">Home</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Genre.html">Genre</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Movie.html">Movie</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Watch.html">Watch</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Profile.html">Celebs</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Trailers.html">Trailers</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Community.html">Community</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Commentary.html">Commentary</a></li>
+</ul>
+</div>
+
+<script>
+    // JavaScript to toggle the 'zoomed' class on click
+    document.getElementById('zoomText').addEventListener('click', function() {
+      this.classList.toggle('zoomed');
+    });
+  </script>
+
+
+<div style="margin-left:30%;padding:1px 16px;height:1000px;">
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+    <div class="numbertext">1/3</div>
+    <img src="interstellar_ver7_xlg.jpg" style="width:890px"> 
+    </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">2/3</div>
+    <img src="godzillavskongjpg.jpg" style="width:890px"> 
+    </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">3/3</div>
+    <img src="TLM.avif" style="width:890px">
+ </div>
+ 
+<br>
+<div style="text-align:center"> 
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span> 
+</div>
+
+    </div> 	
+<br>
+
+<section>
+    <h1 style= "color:white;">Premiering Soon:</h1>
+</section>
+
+<div>
+<div class="gallery">
+	<a target="_blank" href="smile-min.png">
+    <img class="zoom-image" src="smile-min.png" alt="Smile" width="600" height="400">
+  </a>
+<div class="desc">Smile</div>
+</div>
+ 
+<div class="gallery">
+  <a target="_blank" href="infinityWar.avif">
+    <img class="zoom-image" src="infinityWar.avif" alt="Avg" width="600" height="400">
+  </a>
+  <div class="desc">Avengers : Infinity War</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="nowhere.jpg">
+    <img class="zoom-image" src="nowhere.jpg" alt="Nowhere" width="600" height="400">
+  </a>
+  <div class="desc">Nowhere</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Joker-Official-Images-Final-Poster-01.webp">
+    <img class="zoom-image" src="Joker-Official-Images-Final-Poster-01.webp" alt="Joker" width="600" height="400">
+  </a>
+  <div class="desc">Joker</div>
+</div>
+
+
+<script>
+  // JavaScript for the automatic slideshow
+  var slideIndex = 0;
+
+  function showSlides() {
+   var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Change slide every 2 seconds
+  }
+
+  // Initial call to start the slideshow
+  showSlides();
+</script>
+</div>
+
+</div>
+
+<div class="footer">
+<footer>
+  <p>&copy; TheMovie Site, 2023</p>
+ </footer>
+</div>
+
+</body>
+</html>

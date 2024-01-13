@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TheMovie Site</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="homepage,trailers,community.css"
+
+<*!=======Import Fonts===================*>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="header">
+		<div class="logo">
+		<img src="moviesite_logo.png" alt="company logo"></div>
+		<h1>&nbsp; TheMovie Site </h1>
+	
+</div
+</div>
+
+<div class=".column side">
+<ul>
+  <li><a id="zoomText" class="zoomed-text" href="Homepage.html">Home</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Genre.html">Genre</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Movie.html">Movie</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Watch.html">Watch</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Profile.html">Celebs</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Trailers.html">Trailers</a></li>
+  <li><a class="active" href="Community.html">Community</a></li>
+  <li><a id="zoomText" class="zoomed-text" href="Commentary.html">Commentary</a></li>
+</ul>
+</div>
+
+<body>
+
+<div style="margin-left:28%;padding:1px 16px;height:1000px;">
+
+
+<button class="collapsible">About Us</button>
+<div class="content">
+  <p>Launched in 2023, our company, "TheMovie Site" aims to create a comprehensive online platform offering moviegoers 
+  and industry professionals valuable information and engaging experiences related to movies. 
+  Our websites provide detailed information about current and upcoming movies.
+  This includes movie listings with summaries, release dates, genres, ratings, cast and director information, and streaming quality.</p>
+</div>
+
+<br>
+<br>
+<br>
+<button class="collapsible">Contact Us : Location</button>
+<div class="content">
+	<img src="1.png" alt="Location" width="500" height="370">
+</div>
+
+<button class="collapsible">Contact Us : Phone Number</button>
+<div class="content">
+   <img src="2.png" alt="Location" width="500" height="370">
+</div>
+
+<button class="collapsible">Contact Us : Email</button>
+<div class="content">
+ <img src="3.png" alt="Location" width="500" height="370">
+</div>
+
+
+
+<!======Right Collapsible==================>
+ <div style="margin-top:-54.5%; margin-left:65%; padding:1px 16px;height:800px; width:430px;">
+
+
+<button class="collapsible" style="width:65%;">How do I submit my rating and comment on TheMovie Site?</button>
+<div class="content" style="width:56.8%;">
+	<p>Any TheMovieSite user can easily rate and give comments on any of TheMovie Site movie title. 
+	Rating titles is a great way to share your opinion. <br>
+	To submit your rating, you can navigate to the "Commentary" page and you will see the space for you to
+	write your opinion and space for you to give your overall rating to the movie.</p>
+</div>
+
+<button class="collapsible" style="width:65%;">Excited about a particular actor or director? </button>
+<div class="content" style="width:56.8%;">
+   <p>If you are curious about particular actor, you can easily navigate to the "Celebs" page.
+   You will able to know their name as well as getting to know the people who are working behind the scenes.</p>
+</div>
+
+<button class="collapsible" style="width:65%;">Need recommendations for movie marathons?</button>
+<div class="content" style="width:56.8%;">
+ <p>Our Watch page is the answer. <br>We provide you the 
+ "Top 10" movies of the week as well as the currently trending movies.</p>
+</div>
+
+<button class="collapsible" style="width:65%;">How can I find information about upcoming movie releases?</button>
+<div class="content" style="width:56.8%;">
+ <p>Stay in the know about the latest films hitting the big screen by checking out our dedicated "Homepage", "Trailers" or 
+    "Genre" section. <br>
+	We regularly update this page with release dates, trailers, and sneak peeks so you can plan your movie nights in advance.</p>
+</div>
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</div>
+
+<div class="footer">
+<footer>
+  <p>&copy; TheMovie Site, 2023</p>
+ </footer>
+</div>
+
+</body>
+</html>
